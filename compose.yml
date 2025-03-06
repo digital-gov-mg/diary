@@ -1,0 +1,21 @@
+services:
+  postgres:
+    container_name: diary_postgres
+    image: postgres:17.2
+    environment:
+      POSTGRES_USER: diary
+      POSTGRES_PASSWORD: diary
+      POSTGRES_DB: diary
+    volumes:
+      - diary_postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - diary_network
+
+volumes:
+  diary_postgres_data:
+
+networks:
+  diary_network:
+    driver: bridge
