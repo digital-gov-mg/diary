@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write \"./src/**/*.+(js|ts|json|jsx|tsx)\"",
+    "test": "jest",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^18",
