@@ -43,8 +43,8 @@ importers:
         specifier: ^3.2.0
         version: 3.3.0
       '@eslint/js':
-        specifier: ^9.18.0
-        version: 9.21.0
+        specifier: ^9.28.0
+        version: 9.28.0
       '@nestjs/cli':
         specifier: ^11.0.0
         version: 11.0.5(@swc/cli@0.6.0(@swc/core@1.11.7(@swc/helpers@0.5.15))(chokidar@4.0.3))(@swc/core@1.11.7(@swc/helpers@0.5.15))(@types/node@22.13.9)
@@ -152,8 +152,8 @@ importers:
   packages/eslint-config:
     devDependencies:
       '@eslint/js':
-        specifier: ^9.21.0
-        version: 9.21.0
+        specifier: ^9.28.0
+        version: 9.28.0
       '@next/eslint-plugin-next':
         specifier: ^15.2.1
         version: 15.2.1
@@ -429,6 +429,10 @@ packages:
 
   '@eslint/js@9.21.0':
     resolution: {integrity: sha512-BqStZ3HX8Yz6LvsF5ByXYrtigrV5AXADWLAGc7PH/1SxOb7/FIYYMszZZWiUou/GB9P2lXWk2SV4d+Z8h0nknw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.28.0':
+    resolution: {integrity: sha512-fnqSjGWd/CoIp4EXIxWVK/sHA6DOHN4+8Ix2cX5ycOY7LG0UY8nHCU5pIp2eaE1Mc7Qd8kHspYNzYXT2ojPLzg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -3196,6 +3200,7 @@ packages:
   multer@1.4.5-lts.1:
     resolution: {integrity: sha512-ywPWvcDMeH+z9gQq5qYHCCy+ethsk4goepZ45GLD63fOu0YcNecQxi64nDs3qluZB+murG3/D4dJ7+dGctcCQQ==}
     engines: {node: '>= 6.0.0'}
+    deprecated: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
 
   mute-stream@2.0.0:
     resolution: {integrity: sha512-WWdIxpyjEn+FhQJQQv9aQAYlHoNVdzIzUySNV1gHUPDSdZJ3yZn7pAAbQcV7B56Mvu881q9FZV+0Vx2xC44VWA==}
@@ -4658,6 +4663,8 @@ snapshots:
   '@eslint/js@8.57.1': {}
 
   '@eslint/js@9.21.0': {}
+
+  '@eslint/js@9.28.0': {}
 
   '@eslint/object-schema@2.1.6': {}
 
